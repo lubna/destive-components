@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --c-bg: #1e1e33;
+  --c-fg: #fff;
+  --c-primary: #0a1578;
+  --c-secondary: #fe3dac;
+  --c-accent: #f8aa12;
+  --c-action: #3294ea;
+  --c-copy: #444;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--c-copy);
+}
+
+body,
+button {
+  font-family: sans-serif;
+}
+
+a {
+  color: var(--c-action);
+}

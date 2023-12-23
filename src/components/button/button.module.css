@@ -1,0 +1,40 @@
+.default {
+  --b-bg: var(--c-action);
+}
+
+.primary {
+  --b-bg: var(--c-primary);
+}
+.secondary {
+  --b-bg: var(--c-secondary);
+}
+
+.button {
+  display: inline-block;
+  padding: 1.5rem 2.25rem;
+  background-color: var(--b-bg);
+  color: var(--c-fg);
+  border: none;
+  min-width: 12ch;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  font-weight: normal;
+  border-radius: 10rem;
+  box-shadow: inset 0 1px 8px var(--b-bg), inset 0 4px 8px 0 #ffffff80,
+    0 2rem 2.5rem -1.5rem var(--b-bg);
+  transition: box-shadow 1s;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.button:hover {
+  box-shadow: inset 0 0px 4px var(--b-bg), inset 0 4px 80px 2px #fff,
+    0 2rem 2.5rem -2rem var(--b-bg);
+  text-shadow: 0 2px 8px var(--b-bg);
+  transition: box-shadow 2s;
+}
+
+.button.small {
+  padding: 1rem 1.75rem;
+}

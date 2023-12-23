@@ -1,0 +1,19 @@
+.default {
+  --fill: var(--c-copy);
+}
+
+.primary {
+  --fill: var(--c-primary);
+}
+
+.secondary {
+  --fill: var(--c-secondary);
+}
+
+.accent {
+  --fill: var(--c-accent);
+}
+
+.action {
+  --fill: var(--c-action);
+}

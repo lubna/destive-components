@@ -1,0 +1,37 @@
+.primary {
+  --marker-fill: var(--c-primary);
+}
+.secondary {
+  --marker-fill: var(--c-secondary);
+}
+.accent {
+  --marker-fill: var(--c-accent);
+}
+.action {
+  --marker-fill: var(--c-action);
+}
+.item {
+  margin: 0.5rem 0;
+}
+
+.item::marker {
+  color: var(--marker-fill);
+}
+
+.custom-marker {
+  list-style: none;
+  display: flex;
+  gap: 0.25rem;
+  align-items: flex-start;
+  margin: 1rem 0;
+  line-height: 1.5rem;
+}
+
+.custom-marker > svg {
+  flex: none;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+}

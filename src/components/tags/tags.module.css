@@ -1,0 +1,47 @@
+.container {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.tag {
+  --tag-bg: var(--c-action);
+  --tag-fg: var(--c-fg);
+  background-color: var(--tag-bg);
+  border-radius: 2rem;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  color: var(--tag-fg);
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+.primary {
+  --tag-bg: var(--c-primary);
+}
+
+.secondary {
+  --tag-bg: var(--c-secondary);
+}
+
+.icon {
+  --size: 0.875rem;
+  --fill: var(--tag-fg);
+  display: inline-block;
+}
+
+.outlined {
+  box-shadow: inset 0 0 0 2px var(--tag-bg);
+  color: var(--tag-bg);
+  background-color: transparent;
+}
+
+.outlined .icon {
+  --fill: var(--tag-bg);
+}
